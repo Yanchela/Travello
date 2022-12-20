@@ -1,0 +1,75 @@
+.products{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    min-height: 558px;
+    .container{
+        min-height: 558px;
+        display: flex;
+        flex-direction: column;
+        .producttitle{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            p{
+                font-size: 18px;
+                font-family: $playfair;
+                margin: 0 auto;
+                color: $buttonmain;
+            }
+            h3{
+                font-size: 45px;
+                font-family: $playfair;
+                margin-top: 10px;
+            }
+        }
+        .productbox{
+            display: flex;
+            justify-content: center;
+            gap:10px;
+            margin-top: 60px;
+            .destination{
+                width: 387px;
+                min-height: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                &:after{
+                    content:'';
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background-color: #1064b886;
+                    z-index: -1;
+                }
+                img{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: -2;
+                }
+                span{
+                    font-size: 24px;
+                    font-family: $playfair;
+                    margin-bottom: 10px;
+                    color: $fontmain;
+                }
+                p{
+                    font-family: $worksans;
+                    font-size: 16px;
+                    margin-bottom: 25px;
+                    max-width: 320px;
+                    line-height: 150%;
+                    color: $fontmain;
+                }
+
+            }
+
+        }
+
+    }
+}
