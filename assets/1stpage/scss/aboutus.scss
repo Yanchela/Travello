@@ -30,18 +30,18 @@
             max-width: 486px;
             min-height: 385px;
             h2{
-                font-family: playfair;
+                font-family: $playfair;
                 font-size: 45px;
                 font-weight: 500;
                 margin-bottom: 20px;
             }
             .mainarticle{
-                font-family: worksans;
+                font-family: $worksans;
                 font-size: 18px;
                 margin-bottom: 20px;
             }
             .titleabout{
-                font-family: playfair;
+                font-family: $playfair;
                 font-weight: 500;
                 font-size: 16px;
                 margin-bottom: 10px;
@@ -56,6 +56,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        max-width: 100%;
     }
     section.secondpage div.container .pictures{
         margin: 0  auto;
@@ -170,7 +171,7 @@
         margin: 0 auto;
     }
 }
-@media (max-width:1440px){
+@media(max-width:1440px){
     .secondpage .container{
         max-width: 95%;
     }

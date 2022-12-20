@@ -29,14 +29,14 @@
         .hero_content{
             max-width: 592px;
             .title{
-                font-family: playfair;
+                font-family: $playfair;
                 font-size: 60px;
                 color: $fontmain;
                 line-height: 110%;
                 margin-bottom: 24px;
             }
             .maintext{
-                font-family: worksans;
+                font-family: $worksans;
                 font-size: 18px;
                 color: $fontmain;
                 line-height: 150%;

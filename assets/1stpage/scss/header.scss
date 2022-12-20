@@ -5,6 +5,8 @@
     margin: 0;
     padding: 0;
 }
+$playfair: 'Playfair Display', serif;
+$worksans: 'Work Sans', sans-serif;
 
 button.themebutton{
     cursor: pointer;
@@ -12,7 +14,7 @@ button.themebutton{
     background-color: $buttonmain;
     border-style: none;
     color: $fontmain;
-    font-family: worksans;
+    font-family: $worksans;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     &:hover{
         background-color: #FFFFFF;
@@ -47,7 +49,7 @@ button.themebutton{
             }
             a{
                 font-size: 30px;
-                font-family: playfair;
+                font-family: $playfair;
                 color: $fontmain;
                 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             }
@@ -59,7 +61,7 @@ button.themebutton{
             gap: 50px;
             li{
                 a{
-                    font-family: worksansmed;
+                    font-family: $worksans;
                     font-size: 24px;
                     color: $fontmain;
                     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

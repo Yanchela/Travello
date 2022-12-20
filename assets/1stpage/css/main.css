@@ -13,7 +13,7 @@ button.themebutton {
   background-color: #2094E6;
   border-style: none;
   color: #FFFFFF;
-  font-family: worksans;
+  font-family: "Work Sans", sans-serif;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -66,7 +66,7 @@ header .container .logo img {
 }
 header .container .logo a {
   font-size: 30px;
-  font-family: playfair;
+  font-family: "Playfair Display", serif;
   color: #FFFFFF;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -81,7 +81,7 @@ header .container .navbar nav ul {
   gap: 50px;
 }
 header .container .navbar nav ul li a {
-  font-family: worksansmed;
+  font-family: "Work Sans", sans-serif;
   font-size: 24px;
   color: #FFFFFF;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -188,14 +188,14 @@ header .container .navbar nav ul li:hover {
   max-width: 592px;
 }
 .hero .container .hero_content .title {
-  font-family: playfair;
+  font-family: "Playfair Display", serif;
   font-size: 60px;
   color: #FFFFFF;
   line-height: 110%;
   margin-bottom: 24px;
 }
 .hero .container .hero_content .maintext {
-  font-family: worksans;
+  font-family: "Work Sans", sans-serif;
   font-size: 18px;
   color: #FFFFFF;
   line-height: 150%;
@@ -343,18 +343,18 @@ header .container .navbar nav ul li:hover {
   min-height: 385px;
 }
 .secondpage .container .aboutus h2 {
-  font-family: playfair;
+  font-family: "Playfair Display", serif;
   font-size: 45px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 .secondpage .container .aboutus .mainarticle {
-  font-family: worksans;
+  font-family: "Work Sans", sans-serif;
   font-size: 18px;
   margin-bottom: 20px;
 }
 .secondpage .container .aboutus .titleabout {
-  font-family: playfair;
+  font-family: "Playfair Display", serif;
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 10px;
@@ -376,6 +376,7 @@ header .container .navbar nav ul li:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    max-width: 100%;
   }
   section.secondpage div.container .pictures {
     margin: 0 auto;
