@@ -1,0 +1,129 @@
+.reccomends{
+    margin-top: 128px;
+    margin-bottom: 80px;
+    .container{
+        max-width: 1190px;
+        .clicks{
+            display: flex;
+            justify-content: space-between;
+            perspective: 1250px;
+            .offers{
+                width: 285px;
+                min-height: 233px;
+                padding: 44px 27px 30px 27px;
+                box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.2);
+                cursor: pointer;
+                .sectionreccomends{
+                    font-family: playfair;
+                    font-size: 24px;
+                    margin-top: 3px;
+                    margin-bottom: 21px;
+                }
+                .sectiondefault{
+                    font-family: worksans;
+                    font-size: 16px;
+                    line-height: 150%;
+                }
+                &:hover{
+                    transform: rotateX(35deg);
+                    transition-duration: 0.5s;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 420px){
+    section.reccomends{
+        margin-top: 35px;
+    }
+    section.reccomends .container{
+        max-width: 285px;
+    }
+    .reccomends .container .clicks{
+        display: block;
+        width: 80%;
+    }
+    .reccomends .container .clicks .offers{
+        margin-bottom: 10px;
+    }
+}
+@media(max-width: 700px){
+    .reccomends{
+        margin-top: 45px;
+    }
+    section.reccomends .container{
+        max-width: 285px;
+    }
+    .reccomends .container .clicks .offers{
+        width: 285px;
+        min-height: 233px;
+        padding: 44px 27px 30px 27px;
+        box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.2);
+        cursor: pointer;
+    }
+    .container .clicks .offers .sectionreccomends{
+        font-family: playfair;
+        font-size: 24px;
+        margin-top: 3px;
+        margin-bottom: 21px;
+    }
+    .container .clicks .offers .sectiondefault{
+        font-family: worksans;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    .container .clicks{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .container .clicks .offers{
+        margin-bottom: 10px;
+    }
+
+}
+@media(max-width: 1024px){
+    .reccomends .container{
+        max-width: 700px;
+    }
+    .reccomends{
+        margin-top: 10px;
+    }
+    div.offers{
+        width: 160px;
+        padding: 20px 15px 15px 15px;
+        box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.3);
+    }
+    .offers .sectionreccomends{
+        font-size: 18px;
+        margin-bottom: 7px;
+    }
+    .offers .sectiondefault{
+        font-size: 14px;
+    }
+}
+@media(max-width: 1440px){
+    .reccomends .container{
+        max-width: 95%;
+    }
+    .reccomends{
+        margin-top: 10px;
+        max-width: 100%;
+    }
+    .offers{
+        width: 285px;
+        min-height: 233px;
+        margin-right: 10px;
+        widows: 100%;
+        padding: 20px 15px 15px 15px;
+        box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.3);
+    }
+    .offers .sectionreccomends{
+        font-size: 18px;
+        margin-bottom: 7px;
+    }
+    .offers .sectiondefault{
+        font-size: 14px;
+    }
+
+}

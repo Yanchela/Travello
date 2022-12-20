@@ -1,0 +1,177 @@
+.secondpage{
+    margin-top: 100px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        .pictures{
+            display: flex;
+            margin-right: 40px;
+            figure{
+                width: 667px;
+                height: 546px;
+                margin-bottom: 30px;
+                .waterfall{
+                    display: block;
+                    max-width: 577px;
+                    max-height: 425px;   
+                }
+                .mountains{
+                    max-width: 386px;
+                    max-height: 263px;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+        }
+        .aboutus{
+            max-width: 486px;
+            min-height: 385px;
+            h2{
+                font-family: playfair;
+                font-size: 45px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            .mainarticle{
+                font-family: worksans;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            .titleabout{
+                font-family: playfair;
+                font-weight: 500;
+                font-size: 16px;
+                margin-bottom: 10px;
+                color: $buttonmain;
+            }
+        }
+    }
+}
+@media(max-width: 420px){
+    section.secondpage div.container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    section.secondpage div.container .pictures{
+        margin: 0  auto;
+        max-width: 330px;
+    }
+    section.secondpage div.container .pictures figure{
+        max-width: 300px;
+        height: auto !important;
+    }
+    .secondpage .pictures figure img.waterfall{
+        width: 250px;
+        object-fit: contain;
+    }
+    .secondpage .pictures figure img.mountains{
+        max-width: 200px;
+        object-fit: contain;
+        right: -30px;
+        bottom: -30px;
+    }
+}
+@media(max-width: 700px){
+    .secondpage div.container{
+        margin-top: -50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .secondpage div.container .pictures{
+        margin: 0  auto;
+        max-width: 90%;
+    }
+    .secondpage div.container .pictures figure{
+        max-width: 300px ;
+        height: 250px !important;
+    }
+    .secondpage .pictures figure img.waterfall{
+        width: 300px ;
+        object-fit: contain;       
+    }
+    .pictures figure img.mountains{
+        width: 200px;
+        object-fit: contain;
+        right: -30px;
+        bottom: 0;
+    }
+}
+@media(max-width: 1024px){
+    .secondpage .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .secondpage div.container .pictures{
+        margin: 0  auto;
+        max-width: 90%;
+    }
+    .pictures figure img.mountains{
+        max-width: 200px;
+        object-fit: contain;
+        right: 0;
+        bottom: -30px;
+    }
+
+
+}
+@media(max-width: 420px){
+    .secondpage .container .aboutus h2{
+        font-size: 30px;
+    }
+    .secondpage .container .aboutus .mainarticle{
+        font-size: 16px;
+    }
+    .secondpage .container .aboutus .titleabout{
+        font-size: 14px;
+    }
+    .aboutus{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .secondpage .container .aboutus .themebutton{
+        display: flex;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 700px){
+    .container .aboutus h2{
+        font-size: 30px;
+    }
+    .container .aboutus .mainarticle{
+        font-size: 16px;
+    }
+    .container .aboutus .titleabout{
+        font-size: 14px;
+    }
+    .aboutus{
+        padding-top: 20px;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .container .aboutus .themebutton{
+        display: flex;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 1024px){
+    .aboutus{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .aboutus .themebutton{
+        display: flex;
+        margin: 0 auto;
+    }
+}
+@media (max-width:1440px){
+    .secondpage .container{
+        max-width: 95%;
+    }
+}
