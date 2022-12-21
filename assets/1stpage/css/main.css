@@ -521,7 +521,6 @@ header .container .navbar nav ul li:hover {
 }
 .reccomends {
   margin-top: 128px;
-  margin-bottom: 20px;
 }
 .reccomends .container {
   max-width: 1190px;
@@ -669,6 +668,7 @@ header .container .navbar nav ul li:hover {
   min-height: 558px;
 }
 .products .container {
+  max-width: 100%;
   min-height: 558px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -706,11 +706,13 @@ header .container .navbar nav ul li:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
-  margin-top: 60px;
+  width: 95%;
+  margin: 0 auto;
+  gap: 20px;
+  margin-top: 50px;
 }
 .products .container .productbox .destination {
-  width: 387px;
+  max-width: 385px;
   min-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -743,6 +745,8 @@ header .container .navbar nav ul li:hover {
   left: 0;
   top: 0;
   z-index: -2;
+  max-width: 100%;
+  min-height: 400px;
 }
 .products .container .productbox .destination span {
   font-size: 24px;
@@ -757,4 +761,66 @@ header .container .navbar nav ul li:hover {
   max-width: 320px;
   line-height: 150%;
   color: #FFFFFF;
+}
+
+@media (max-width: 420px) {
+  .products {
+    margin-top: 40px;
+  }
+  .products .container div.producttitle h3 {
+    font-size: 30px;
+  }
+  .products .container div.producttitle p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 700px) {
+  .products .container .productbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 35px;
+  }
+  .products {
+    margin-top: 60px;
+  }
+  .products .container .producttitle h3 {
+    font-size: 40px;
+  }
+  .products .container .producttitle p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .products .container .productbox .destination img {
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .products .container .productbox .destination {
+    height: 100%;
+    min-height: none;
+  }
+  .products .container .productbox .destination span {
+    font-size: 22px;
+    width: 90%;
+  }
+  .products .container .productbox .destination p {
+    font-size: 14px;
+    width: 90%;
+  }
+  .products {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 1440px) {
+  .container .productbox .destination img {
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
